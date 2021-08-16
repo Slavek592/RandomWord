@@ -1,1 +1,6 @@
+To launch, You will need to download the repository.
+Then, open the .html file in Your browser.
+It is a version of random_word.py, but written in HTML and JavaScript.
+The difference is mainly in the apperiance.
 
+Good luck! And enjoy!
