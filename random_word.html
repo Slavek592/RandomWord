@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Random word</title>
+        <meta charset="utf-8"/>
+        <style>
+            body {
+                background-color: black;
+                color: white;
+            }
+        </style>
+        <script>
+            var WordLength = 6;
+            const LetterList = [
+                "a", "a", "a", "b", "c", "d",
+                "e", "e", "e", "f", "g", "h",
+                "i", "i", "j", "k", "l", "m",
+                "n", "o", "o", "p", "r", "s",
+                "t", "u", "u", "v", "y", "y",
+                "z"
+            ];
+            function SetLength(number)
+            {
+                WordLength = number;
+                document.getElementById("length").innerHTML = number;
+            }
+            function Generate()
+            {
+                var NewWord = "";
+                for (let i = 0; i < WordLength; i++)
+                {
+                    var LetterNumber = Math.floor(Math.random() * 31);
+                    NewWord += LetterList[LetterNumber];
+                }
+                document.getElementById("word").innerHTML = NewWord;
+            }
+        </script>
+    </head>
+    
+    <body>
+        <h1>Random generator</h1>
+        <p>Set the length and generate Your words.</p>
+        <p>
+            <button type="button" onclick="SetLength(0)">0</button>
+            <button type="button" onclick="SetLength(1)">1</button>
+            <button type="button" onclick="SetLength(2)">2</button>
+            <button type="button" onclick="SetLength(3)">3</button>
+            <button type="button" onclick="SetLength(4)">4</button>
+            <button type="button" onclick="SetLength(5)">5</button>
+            <button type="button" onclick="SetLength(6)">6</button>
+            <button type="button" onclick="SetLength(7)">7</button>
+            <button type="button" onclick="SetLength(8)">8</button>
+            <button type="button" onclick="SetLength(9)">9</button>
+        </p>
+        <p id="length">6</p>
+        <p><button type="button" onclick="Generate()">Generate</button></p>
+        <p id="word">A place for Your word</p>
+    </body>
+</html>
