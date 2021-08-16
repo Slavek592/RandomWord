@@ -1,1 +1,16 @@
+To launch, You will need to download the repository.
+Then, open Your console and navigate to this folder.
+Then, run command like this:
 
+python random_word.py
+
+It depends on Your version of Python program, Your version of shell and the file.
+python - it seems to be Python 2, You can try python3, it should be Python 3.7.
+This command works in bash. In case of using something else, the command may be a little bit different.
+
+And, finally, the files:
+random_word.py - generates random word, 4 possible variants, length is 0 to 100.
+random_text.py - generates random text (consisting of random words), 0 to 100 words. Randomly chooses starting and ending of sentences (ended by dot).
+random_word_mobile_version.py - version of random_word.py, use it in case of errors in the above version. Generates random word, 3 possible variants, length is 0 to 100.
+
+Good luck! And enjoy!
